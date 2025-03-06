@@ -3,12 +3,20 @@
 .settings_stats {
     width: 40% !important;
     height: 40% !important;
-    @include flex('flex_3');
+    @include flex('flex_6');
     border-left: 0 !important;
     border: 1px solid rgb(255, 255, 255);
 }
 
 .settings_container_icon_stats {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    @include flex('flex_4');
+}
+
+.settings_content_icon_stats {
     width: 100%;
     height: 60px;
     overflow: hidden;
@@ -24,7 +32,7 @@
 }
 
 .stats_icon {
-    opacity: 0 !important;
+    opacity: 0;
 
     &:nth-child(1) {
         color: rgb(255, 69, 0) !important;
@@ -70,7 +78,7 @@
 
 .settings_container_text_stats {
     width: 100%;
-    height: 20%;
+    height: 40%;
     overflow: hidden;
     @include flex('flex_5');
 
@@ -78,8 +86,21 @@
         max-width: 18em;
         overflow: hidden;
         text-wrap: nowrap;
+        @include space('0');
         text-overflow: ellipsis;
     }
+
+    .loader_write {
+        margin: 0;
+        margin-left: .5em;
+        @include space('p0');
+    }
+}
+
+.settings_content_text_stats {
+    width: 100%;
+    height: auto;
+    @include flex('flex_1');
 }
 
 .loader_write {
