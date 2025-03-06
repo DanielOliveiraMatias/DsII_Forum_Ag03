@@ -1,0 +1,22 @@
+@mixin flex($value) {
+    @if $value =='flex_1' {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    @if $value =='flex_2' {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+}
+
+@mixin space($value) {
+    @if $value =='zero' {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}

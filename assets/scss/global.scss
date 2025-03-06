@@ -1,0 +1,34 @@
+@import 'mixin.scss';
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+* {
+    transition: all 0.3s ease-in-out !important;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+::-webkit-scrollbar-button {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+body {
+    overflow: hidden !important;
+    @include flex('flex_1');
+}
+
+main {
+    @include flex('flex_1');
+}
+
+.container-fluid {
+    width: 82em;
+    height: 42em;
+    @include flex('flex_2');
+}
