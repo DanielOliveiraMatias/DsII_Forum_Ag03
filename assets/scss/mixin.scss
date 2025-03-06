@@ -28,15 +28,36 @@
 
     @if $value =='flex_5' {
         display: flex !important;
+        align-items: start !important;
+        justify-content: center !important;
+        flex-wrap: nowrap !important;
+    }
+
+    @if $value =='flex_6' {
+        display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    @if $value =='flex_7' {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
     }
 }
 
 @mixin space($value) {
-    @if $value =='zero' {
+    @if $value =='0' {
         padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    @if $value =='p0' {
+        padding: 0 !important;
+    }
+
+    @if $value =='m0' {
         margin: 0 !important;
     }
 }
