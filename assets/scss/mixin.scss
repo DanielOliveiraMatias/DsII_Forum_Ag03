@@ -12,6 +12,26 @@
         flex-direction: column !important;
         flex-wrap: wrap !important;
     }
+
+    @if $value =='flex_3' {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    @if $value =='flex_4' {
+        display: flex !important;
+        align-items: end !important;
+        justify-content: center !important;
+    }
+
+    @if $value =='flex_5' {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: row !important;
+    }
 }
 
 @mixin space($value) {
