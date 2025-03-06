@@ -1,4 +1,14 @@
+@import 'mixin.scss';
+
 .container-triangle {
     width: 60% !important;
     height: 100% !important;
+    @include flex('flex_1');
+}
+
+.content-triangle {
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+    perspective-origin: 50% -100%;
 }
