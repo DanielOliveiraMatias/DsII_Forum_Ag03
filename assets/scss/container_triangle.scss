@@ -4,12 +4,12 @@
     width: 60% !important;
     height: 100% !important;
     @include flex('flex_1');
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .content-triangle {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     perspective: 800px;
     perspective-origin: 50% -100%;
-    border: 1px solid rgb(255, 255, 255);
 }

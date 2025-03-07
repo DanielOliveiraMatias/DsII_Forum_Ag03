@@ -24,7 +24,7 @@
     <main class="vh-100 continaer-fluid ">
         <div class="container-fluid border">
             <div class="container-triangle">
-               <div class="content-triangle">
+                <div class="content-triangle">
                     <div class="triangle">
                         <div class="sides right"></div>
                         <div class="sides left"></div>
@@ -53,18 +53,24 @@
                 </div>
                 <div class="settings_container_text_stats">
                     <div class="settings_content_text_stats">
-                        <p class="msg_stats fs-4">Status</p>
+                        <p class="msg_stats fs-4">Stats</p>
                         <p class="loader_write"></p>
+                    </div>
+                    <div class="settings_content_text_stats">
+                        <p class="elements_stats"><span class="c_correct">Eixo X</span>, <span class="c_wrong">Eixo
+                                Y</span>, <span class="c_important">Eixo Z</span>, <span class="c_empty">Base</span></p>
                     </div>
                 </div>
             </div>
             <div class="settings_inputs">
                 <ul class="list-unstyled settings_inputs_list">
-                    <li>
+                    <li id="eixo_x">
                         <div class="settings_inputs_section">
                             <div class="settings_inputs_line"></div>
                             <div class="settings_inputs_title">
-                                <h3 class="text-body-secondary">Lado 1</h3>
+                                <a href="#eixo_x" class="text-body-secondary">
+                                    <h3>Eixo X</h3>
+                                </a>
                             </div>
                             <div class="settings_inputs_line"></div>
                         </div>
@@ -73,20 +79,30 @@
                                 <span>100</span>
                             </div>
                             <div class="field">
-                                <div class="value left">0</div>
-                                <input type="range" min="10" max="200" value="100" steps="1">
-                                <div class="value right">200</div>
+                                <div class="value reset">
+                                    <div class="reset_icon">
+                                        <i class="bi bi-arrow-counterclockwise"></i>
+                                    </div>
+                                </div>
+                                <div class="value field_left">80</div>
+                                <input type="range" min="80" max="240" value="160" steps="1">
+                                <div class="value field_right">240</div>
                             </div>
                         </div>
                         <div class="color">
-                            <input type="color" class="form-control form-control-color" value="#563d7c">
+                            <input type="color" class="form-control form-control-color color-half" id="left"
+                                value="#c81c1c">
+                            <input type="color" class="form-control form-control-color color-half" id="right"
+                                value="#1fd5d5">
                         </div>
                     </li>
-                    <li>
+                    <li id="eixo_y">
                         <div class="settings_inputs_section">
                             <div class="settings_inputs_line"></div>
                             <div class="settings_inputs_title">
-                                <h3 class="text-body-secondary">Lado 2</h3>
+                                <a href="#eixo_y" class="text-body-secondary">
+                                    <h3>Eixo Y</h3>
+                                </a>
                             </div>
                             <div class="settings_inputs_line"></div>
                         </div>
@@ -95,20 +111,30 @@
                                 <span>100</span>
                             </div>
                             <div class="field">
-                                <div class="value left">0</div>
-                                <input type="range" min="10" max="200" value="100" steps="1">
-                                <div class="value right">200</div>
+                                <div class="value reset">
+                                    <div class="reset_icon">
+                                        <i class="bi bi-arrow-counterclockwise"></i>
+                                    </div>
+                                </div>
+                                <div class="value field_left">80</div>
+                                <input type="range" min="80" max="240" value="160" steps="1">
+                                <div class="value field_right">240</div>
                             </div>
                         </div>
                         <div class="color">
-                            <input type="color" class="form-control form-control-color" value="#563d7c">
+                            <input type="color" class="form-control form-control-color color-half" id="front"
+                                value="#683fe3">
+                            <input type="color" class="form-control form-control-color color-half" id="back"
+                                value="#efff16">
                         </div>
                     </li>
-                    <li>
+                    <li id="eixo_z">
                         <div class="settings_inputs_section">
                             <div class="settings_inputs_line"></div>
                             <div class="settings_inputs_title">
-                                <h3 class="text-body-secondary">Lado 3</h3>
+                                <a href="#eixo_z" class="text-body-secondary">
+                                    <h3>Eixo Z</h3>
+                                </a>
                             </div>
                             <div class="settings_inputs_line"></div>
                         </div>
@@ -117,35 +143,18 @@
                                 <span>100</span>
                             </div>
                             <div class="field">
-                                <div class="value left">0</div>
-                                <input type="range" min="10" max="200" value="100" steps="1">
-                                <div class="value right">200</div>
+                                <div class="value reset">
+                                    <div class="reset_icon">
+                                        <i class="bi bi-arrow-counterclockwise"></i>
+                                    </div>
+                                </div>
+                                <div class="value field_left">80</div>
+                                <input type="range" min="80" max="240" value="160" steps="1">
+                                <div class="value field_right">240</div>
                             </div>
                         </div>
                         <div class="color">
-                            <input type="color" class="form-control form-control-color" value="#563d7c">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="settings_inputs_section">
-                            <div class="settings_inputs_line"></div>
-                            <div class="settings_inputs_title">
-                                <h3 class="text-body-secondary">Base</h3>
-                            </div>
-                            <div class="settings_inputs_line"></div>
-                        </div>
-                        <div class="range">
-                            <div class="sliderValue">
-                                <span>100</span>
-                            </div>
-                            <div class="field">
-                                <div class="value left">0</div>
-                                <input type="range" min="10" max="200" value="100" steps="1">
-                                <div class="value right">200</div>
-                            </div>
-                        </div>
-                        <div class="color">
-                            <input type="color" class="form-control form-control-color" value="#563d7c">
+                            <input type="color" class="form-control form-control-color" id="bottom" value="#ffffff">
                         </div>
                     </li>
                 </ul>
@@ -157,6 +166,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="assets/js/settings_inputs/input_value/input_value.js"></script>
+    <script src="assets/js/settings_inputs/reset_values/reset_values.js"></script>
+    <script src="assets/js/triangle/system/triangle.js"></script>
 
 </body>
 

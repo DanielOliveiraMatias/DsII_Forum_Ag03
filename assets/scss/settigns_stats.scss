@@ -80,7 +80,7 @@
     width: 100%;
     height: 40%;
     overflow: hidden;
-    @include flex('flex_5');
+    @include flex('flex_6');
 
     .msg_stats {
         max-width: 18em;
@@ -140,4 +140,28 @@
         transform: scale(1);
         opacity: 0;
     }
+}
+
+.elements_stats {
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1em !important;
+    color: rgba(255, 255, 255, 0.27);
+}
+
+.c_empty {
+    color: rgba(255, 255, 255, 0.47);
+}
+
+.c_correct {
+    color: rgba(2, 197, 8, 0.7);
+}
+
+.c_wrong {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.c_important {
+    color: rgba(255, 69, 0, 0.7);
 }
