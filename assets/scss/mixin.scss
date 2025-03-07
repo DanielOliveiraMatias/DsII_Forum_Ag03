@@ -28,9 +28,9 @@
 
     @if $value =='flex_5' {
         display: flex !important;
-        align-items: start !important;
-        justify-content: center !important;
-        flex-wrap: nowrap !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        flex-direction: column !important;
     }
 
     @if $value =='flex_6' {
