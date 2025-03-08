@@ -1,6 +1,7 @@
 @import 'mixin.scss';
 
-html, .settings_inputs {
+html,
+.settings_inputs {
     scroll-behavior: smooth !important;
 }
 
@@ -18,6 +19,14 @@ html, .settings_inputs {
     height: 0 !important;
 }
 
+html,
+main,
+body {
+    overflow: hidden !important;
+    min-height: 100dvh !important;
+    max-height: 100dvh !important;
+}
+
 body {
     overflow: hidden !important;
     @include flex('flex_1');
@@ -25,6 +34,19 @@ body {
 
 main {
     @include flex('flex_1');
+}
+
+.content_main {
+    position: relative;
+    @include space('0');
+    width: 85em !important;
+    @include flex('flex_1');
+    height: 42em !important;
+    min-width: 85em !important;
+    max-width: 85em !important;
+    overflow: hidden !important;
+    min-height: 42em !important;
+    max-height: 42em !important;
 }
 
 .container-fluid {

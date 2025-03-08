@@ -1,11 +1,11 @@
 @import 'mixin.scss';
 
 .settings_stats {
-    width: 40% !important;
-    height: 40% !important;
+    border: 0;
+    width: 100% !important;
+    height: 30% !important;
     @include flex('flex_6');
-    border-left: 0 !important;
-    border: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.186) !important;
 }
 
 .settings_container_icon_stats {
@@ -106,8 +106,8 @@
 .loader_write {
     width: 23px;
     height: 23px;
-    display: inline-block;
     position: relative;
+    display: inline-block;
 
     &::after,
     &::before {

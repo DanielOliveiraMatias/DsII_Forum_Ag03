@@ -1,0 +1,397 @@
+@import 'mixin.scss';
+
+@media (max-width: 1237px) {
+    .open {
+        top: .7em !important;
+    }
+
+    .content_main {
+        width: 77em !important;
+        min-width: 77em !important;
+        max-width: 77em !important;
+    }
+
+    .container-triangle {
+        width: 55% !important;
+    }
+
+    .navbar {
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 1067px) {
+    .content_main {
+        width: 65em !important;
+        min-width: 65em !important;
+        max-width: 65em !important;
+    }
+
+    .range {
+        width: 307px !important;
+    }
+
+    .field .value.reset {
+        top: 0;
+        right: -33% !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .content_main {
+        width: 55em !important;
+        min-width: 55em !important;
+        max-width: 55em !important;
+    }
+
+    .range {
+        width: 247px !important;
+    }
+
+    .field .value.reset {
+        top: 0;
+        right: -47% !important;
+    }
+}
+
+@media (max-width: 777px) {
+    .content_main {
+        min-width: 100dvw !important;
+        max-width: 100dvw !important;
+        min-height: 100dvh !important;
+        max-height: 100dvh !important;
+        @include flex('flex_3');
+    }
+
+    .open {
+        right: 50% !important;
+        left: 50% !important;
+        top: 83% !important;
+        width: 9em !important;
+        height: 9em !important;
+        border-radius: 50% !important;
+        background-color: rgba(0, 0, 0, 0.334);
+        transform: translateX(-50%) !important;
+    }
+
+    .open_icon {
+        font-size: 3em !important;
+    }
+
+    .triangle_options {
+        left: 50% !important;
+        right: 50% !important;
+        height: 3em !important;
+        font-size: 1.7em !important;
+        transform: translateX(-50%) !important;
+    }
+
+    .triangle_track {
+        height: 85% !important;
+    }
+
+    .container-triangle {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        min-height: 100% !important;
+        max-height: 100% !important;
+    }
+
+    .navbar {
+        min-width: 100% !important;
+        max-width: 100% !important;
+
+        top: 0 !important;
+        opacity: 0 !important;
+        right: -100% !important;
+        z-index: 100 !important;
+        position: absolute !important;
+    }
+
+    .show_nav {
+        right: 0 !important;
+        opacity: 1 !important;
+    }
+
+    .triangle_tutorial {
+        height: 0 !important;
+        top: 15em !important;
+        left: 50% !important;
+        right: 50% !important;
+        width: 0 !important;
+        transform: translateX(-50%) translateY(10%) !important;
+    }
+
+    .tutorial_list {
+        font-size: 2em !important;
+    }
+
+    .show_tuto {
+        top: 50em !important;
+        left: 50% !important;
+        right: 50% !important;
+        opacity: 1 !important;
+        height: auto !important;
+        min-width: 70dvw !important;
+        max-width: 70dvw !important;
+    }
+
+    .settings_content_text_stats {
+        p {
+            font-size: 2.3em !important;
+        }
+    }
+
+    .elements_stats {
+        span {
+            font-size: 1em !important;
+            padding: 0 .25em !important;
+        }
+    }
+
+    .sliderValue span {
+        top: -70px !important;
+        width: 77px !important;
+        height: 77px !important;
+        font-size: 1.7em !important;
+    }
+
+    .settings_inputs_title {
+        h3 {
+            font-size: 2em !important;
+        }
+    }
+
+    .settings_inputs_line {
+        height: .25em !important;
+    }
+
+    li {
+        &:hover {
+            h3 {
+                transform: none !important;
+            }
+
+            .settings_inputs_line {
+                transform: none !important;
+            }
+        }
+    }
+
+    .color {
+        padding-top: 1em !important;
+        width: 100% !important;
+
+        .color-half {
+            display: block !important;
+            height: 80px !important;
+
+            input {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+
+        input {
+            width: 87% !important;
+            height: 10;
+
+            &:hover {
+                transform: none !important;
+            }
+        }
+    }
+
+    .close {
+        top: 2em !important;
+        right: 50% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        opacity: 1 !important;
+        width: 5.7em !important;
+        height: 5.7em !important;
+
+        .close_icon {
+            font-size: 3em !important;
+        }
+    }
+
+    .range {
+        width: 777px !important;
+        height: 100px !important;
+    }
+
+    .field .value.reset {
+        top: 0;
+        right: -12% !important;
+        font-size: 1.7em !important;
+    }
+}
+
+@media (max-width: 749px) {
+
+    .range {
+        width: 597px !important;
+    }
+
+    .field .value.reset {
+        right: -13% !important;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .range {
+        width: 527px !important;
+    }
+
+    .field .value.reset {
+        right: -14% !important;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .range {
+        width: 497px !important;
+    }
+
+    .field .value.reset {
+        right: -17% !important;
+    }
+}
+
+@media (max-width: 595px) {
+
+    .range {
+        width: 427px !important;
+    }
+
+    .field .value.reset {
+        right: -19% !important;
+    }
+}
+
+@media (max-width: 532px) {
+
+    .settings_content_text_stats {
+        p {
+            font-size: 2em !important;
+        }
+    }
+
+    .elements_stats {
+        span {
+            font-size: .7em !important;
+        }
+    }
+
+    .settings_inputs_title {
+        h3 {
+            font-size: 1.27em !important;
+        }
+    }
+
+    .range {
+        width: 397px !important;
+    }
+
+    .field .value.reset {
+        right: -21% !important;
+    }
+}
+
+@media (max-width: 497px) {
+    .range {
+        width: 507px !important;
+    }
+
+    .field .value.reset {
+        right: -30% !important;
+    }
+}
+
+@media (max-width: 427px) {
+    .range {
+        width: 457px !important;
+    }
+
+    .field .value.reset {
+        right: -32% !important;
+    }
+}
+
+@media (max-width: 376px) {
+    .range {
+        width: 437px !important;
+    }
+
+    .field .value.reset {
+        right: -77% !important;
+    }
+}
+
+@media (max-width: 341px) {
+    .elements_stats {
+        span {
+            font-size: .5em !important;
+        }
+    }
+}
+
+@media (max-width: 317px) {
+    .settings_inputs_title {
+        h3 {
+            font-size: .7em !important;
+        }
+    }
+
+    .settings_inputs_line {
+        height: .1em !important;
+    }
+
+    .range {
+        width: 457px !important;
+    }
+
+    .field .value.reset {
+        right: -177% !important;
+    }
+}
+
+@media (max-height: 900px) and (max-width: 777px) {
+    .open {
+        top: 77% !important;
+    }
+
+    .settings_stats {
+        min-height: 40% !important;
+        max-height: 40% !important;
+    }
+
+    .settings_inputs {
+        min-height: 60% !important;
+        max-height: 60% !important;
+    }
+}
+
+@media (max-height: 664px) and (max-width: 777px) {
+    .open {
+        width: 7em !important;
+        height: 7em !important;
+    }
+
+    .open_icon {
+        font-size: 3em !important;
+    }
+
+    .settings_stats {
+        min-height: 50% !important;
+        max-height: 50% !important;
+    }
+
+    .settings_inputs {
+        min-height: 50% !important;
+        max-height: 50% !important;
+    }
+}

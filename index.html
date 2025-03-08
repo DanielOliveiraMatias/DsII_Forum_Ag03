@@ -19,11 +19,120 @@
     <title>HOME</title>
 </head>
 
-<body class="vh-100" data-bs-theme="dark">
+<body data-bs-theme="dark">
 
-    <main class="vh-100 continaer-fluid ">
-        <div class="container-fluid border">
+    <main class="continaer-fluid">
+        <div class="content_main border">
             <div class="container-triangle">
+                <div class="triangle_options">
+                    <div class="triangle_track"></div>
+                    <p class="triangle_option toggle_tuto" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Tutorial">
+                        <i class="bi bi-lightbulb toggle_tuto"></i>
+                    </p>
+                    <p class="triangle_option select_op" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Perspectiva">
+                        <i class="bi bi-box"></i>
+                    </p>
+                    <p class="triangle_option" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="Ortográfica">
+                        <i class="bi bi-square"></i>
+                    </p>
+                </div>
+                <div class="triangle_tutorial">
+                    <ul class="list-unstyled tutorial_list">
+                        <li class="list_title">
+                            <div class="content_icon">
+                                <i class="bi bi-pc-display"></i>
+                            </div>
+                            <div class="content_title">
+                                <p>PC</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="width: 1.5em; height: 100%;" fill="rgba(255, 255, 255, 0.773)" version="1.1"
+                                    viewBox="0 0 356.572 356.572" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M181.563,0C120.762,0,59.215,30.525,59.215,88.873V237.5c0,65.658,53.412,119.071,119.071,119.071   c65.658,0,119.07-53.413,119.07-119.071V88.873C297.356,27.809,237.336,0,181.563,0z M274.945,237.5   c0,53.303-43.362,96.657-96.659,96.657c-53.299,0-96.657-43.354-96.657-96.657v-69.513c20.014,6.055,57.685,15.215,102.221,15.215   c28.515,0,59.831-3.809,91.095-14.567V237.5z M274.945,144.794c-81.683,31.233-168.353,7.716-193.316-0.364V88.873   c0-43.168,51.489-66.46,99.934-66.46c46.481,0,93.382,20.547,93.382,66.46V144.794z M190.893,48.389v81.248   c0,6.187-5.023,11.208-11.206,11.208c-6.185,0-11.207-5.021-11.207-11.208V48.389c0-6.186,5.021-11.207,11.207-11.207   C185.869,37.182,190.893,42.203,190.893,48.389z M264.272,130.378c0,0-46.687,13.072-62.566,10.271V36.988   C201.706,36.988,276.412,37.923,264.272,130.378z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Mover</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="width: 1.5em; height: 100%;" fill="rgba(255, 255, 255, 0.773)" version="1.1"
+                                    viewBox="0 0 356.572 356.572" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M181.563,0C120.762,0,59.215,30.525,59.215,88.873V237.5c0,65.658,53.412,119.071,119.071,119.071   c65.658,0,119.07-53.413,119.07-119.071V88.873C297.356,27.809,237.336,0,181.563,0z M274.945,237.5   c0,53.303-43.362,96.657-96.659,96.657c-53.299,0-96.657-43.354-96.657-96.657v-69.513c20.014,6.055,57.685,15.215,102.221,15.215   c28.515,0,59.831-3.809,91.095-14.567V237.5z M274.945,144.794c-81.683,31.233-168.353,7.716-193.316-0.364V88.873   c0-43.168,51.489-66.46,99.934-66.46c46.481,0,93.382,20.547,93.382,66.46V144.794z M190.893,48.389v81.248   c0,6.187-5.023,11.208-11.206,11.208c-6.185,0-11.207-5.021-11.207-11.208V48.389c0-6.186,5.021-11.207,11.207-11.207   C185.869,37.182,190.893,42.203,190.893,48.389z M154.938,40.068V143.73c-15.879,2.802-62.566-10.271-62.566-10.271   C80.233,41.004,154.938,40.068,154.938,40.068z" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Rotacionar</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" viewBox="600.00103,107.00019,800.00137,800.00137">
+                                    <g fill="rgba(255, 255, 255, 0.773)">
+                                        <path
+                                            d="M1007.35335,107.00112c-136.41228,0 -274.49828,68.48547 -274.49828,199.39423v333.45748c0,147.30938 119.83442,267.14605 267.14605,267.14605c147.30938,0 267.1438,-119.83667 267.1438,-267.14605v-333.45748c0,-137.00234 -134.66004,-199.39423 -259.79157,-199.39423zM1216.86392,639.85283c0,119.58987 -97.28638,216.85831 -216.86279,216.85831c-119.5809,0 -216.85831,-97.26843 -216.85831,-216.85831v-155.9584c44.90313,13.58491 129.42127,34.13616 229.34162,34.13616c63.97586,0 134.236,-8.54582 204.37948,-32.68232zM1216.86392,431.85893c-183.26285,70.07393 -377.71446,17.31151 -433.7211,-0.81667v-124.64692c0,-96.85113 115.52001,-149.10874 224.21054,-149.10874c104.28413,0 209.51056,46.09896 209.51056,149.10874zM1028.28601,215.56601v182.28689c0,13.88107 -11.26953,25.14611 -25.14163,25.14611c-13.87658,0 -25.14387,-11.26505 -25.14387,-25.14611v-182.28689c0,-13.87882 11.26505,-25.14387 25.14387,-25.14387c13.86985,0 25.14163,11.26505 25.14163,25.14387z"
+                                            id="CompoundPath 1" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Zoom</p>
+                            </div>
+                        </li>
+                        <li class="list_title">
+                            <div class="content_icon">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <div class="content_title">
+                                <p>Celular</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <i class="bi bi-arrows-move"></i>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Mover</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <i class="bi bi-arrow-repeat"></i>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Rotacionar</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tuto_icon">
+                                <i class="bi bi-arrows-angle-expand"></i>
+                            </div>
+                            <div class="tuto_action">
+                                <p>Zoom</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle_nav open">
+                    <div class="open_icon">
+                        <i class="bi bi-layout-sidebar-reverse"></i>
+                    </div>
+                </div>
                 <div class="content-triangle">
                     <div class="triangle">
                         <div class="sides right"></div>
@@ -35,129 +144,137 @@
                     </div>
                 </div>
             </div>
-            <div class="settings_stats">
-                <div class="settings_container_icon_stats">
-                    <div class="settings_content_icon_stats">
-                        <div class="track exclamation">
-                            <div class="exclamation stats_icon">
-                                <i class="bi bi-exclamation-circle fs-1"></i>
+            <div class="navbar">
+                <div class="toggle_nav close">
+                    <div class="close_icon">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+                <div class="settings_stats">
+                    <div class="settings_container_icon_stats">
+                        <div class="settings_content_icon_stats">
+                            <div class="track exclamation">
+                                <div class="exclamation stats_icon">
+                                    <i class="bi bi-exclamation-circle fs-1"></i>
+                                </div>
+                                <div class="error stats_icon">
+                                    <i class="bi bi-x-circle fs-1"></i>
+                                </div>
+                                <div class="check stats_icon">
+                                    <i class="bi bi-check2-circle fs-1"></i>
+                                </div>
                             </div>
-                            <div class="error stats_icon">
-                                <i class="bi bi-x-circle fs-1"></i>
-                            </div>
-                            <div class="check stats_icon">
-                                <i class="bi bi-check2-circle fs-1"></i>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="settings_container_text_stats">
+                        <div class="settings_content_text_stats">
+                            <p class="msg_stats fs-4">Stats</p>
+                            <p class="loader_write"></p>
+                        </div>
+                        <div class="settings_content_text_stats">
+                            <p class="elements_stats"><span class="c_correct">Eixo X</span>, <span class="c_wrong">Eixo
+                                    Y</span>, <span class="c_important">Eixo Z</span>, <span class="c_empty">Base</span>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="settings_container_text_stats">
-                    <div class="settings_content_text_stats">
-                        <p class="msg_stats fs-4">Stats</p>
-                        <p class="loader_write"></p>
-                    </div>
-                    <div class="settings_content_text_stats">
-                        <p class="elements_stats"><span class="c_correct">Eixo X</span>, <span class="c_wrong">Eixo
-                                Y</span>, <span class="c_important">Eixo Z</span>, <span class="c_empty">Base</span></p>
-                    </div>
+                <div class="settings_inputs">
+                    <ul class="list-unstyled settings_inputs_list">
+                        <li id="eixo_x">
+                            <div class="settings_inputs_section">
+                                <div class="settings_inputs_line"></div>
+                                <div class="settings_inputs_title">
+                                    <a href="#eixo_x" class="text-body-secondary">
+                                        <h3>Eixo X</h3>
+                                    </a>
+                                </div>
+                                <div class="settings_inputs_line"></div>
+                            </div>
+                            <div class="range">
+                                <div class="sliderValue">
+                                    <span>100</span>
+                                </div>
+                                <div class="field">
+                                    <div class="value reset">
+                                        <div class="reset_icon">
+                                            <i class="bi bi-arrow-counterclockwise"></i>
+                                        </div>
+                                    </div>
+                                    <div class="value field_left">80</div>
+                                    <input type="range" min="80" max="240" value="160" steps="1">
+                                    <div class="value field_right">240</div>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <input type="color" class="form-control form-control-color color-half color-half_2"
+                                    id="left" value="#c81c1c">
+                                <input type="color" class="form-control form-control-color color-half color-half_2"
+                                    id="right" value="#1fd5d5">
+                            </div>
+                        </li>
+                        <li id="eixo_y">
+                            <div class="settings_inputs_section">
+                                <div class="settings_inputs_line"></div>
+                                <div class="settings_inputs_title">
+                                    <a href="#eixo_y" class="text-body-secondary">
+                                        <h3>Eixo Y</h3>
+                                    </a>
+                                </div>
+                                <div class="settings_inputs_line"></div>
+                            </div>
+                            <div class="range">
+                                <div class="sliderValue">
+                                    <span>100</span>
+                                </div>
+                                <div class="field">
+                                    <div class="value reset">
+                                        <div class="reset_icon">
+                                            <i class="bi bi-arrow-counterclockwise"></i>
+                                        </div>
+                                    </div>
+                                    <div class="value field_left">80</div>
+                                    <input type="range" min="80" max="240" value="160" steps="1">
+                                    <div class="value field_right">240</div>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <input type="color" class="form-control form-control-color color-half color-half_2"
+                                    id="front" value="#683fe3">
+                                <input type="color" class="form-control form-control-color color-half color-half_2"
+                                    id="back" value="#efff16">
+                            </div>
+                        </li>
+                        <li id="eixo_z">
+                            <div class="settings_inputs_section">
+                                <div class="settings_inputs_line"></div>
+                                <div class="settings_inputs_title">
+                                    <a href="#eixo_z" class="text-body-secondary">
+                                        <h3>Eixo Z</h3>
+                                    </a>
+                                </div>
+                                <div class="settings_inputs_line"></div>
+                            </div>
+                            <div class="range">
+                                <div class="sliderValue">
+                                    <span>100</span>
+                                </div>
+                                <div class="field">
+                                    <div class="value reset">
+                                        <div class="reset_icon">
+                                            <i class="bi bi-arrow-counterclockwise"></i>
+                                        </div>
+                                    </div>
+                                    <div class="value field_left">80</div>
+                                    <input type="range" min="80" max="240" value="160" steps="1">
+                                    <div class="value field_right">240</div>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <input type="color" class="form-control form-control-color" id="bottom" value="#ffffff">
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="settings_inputs">
-                <ul class="list-unstyled settings_inputs_list">
-                    <li id="eixo_x">
-                        <div class="settings_inputs_section">
-                            <div class="settings_inputs_line"></div>
-                            <div class="settings_inputs_title">
-                                <a href="#eixo_x" class="text-body-secondary">
-                                    <h3>Eixo X</h3>
-                                </a>
-                            </div>
-                            <div class="settings_inputs_line"></div>
-                        </div>
-                        <div class="range">
-                            <div class="sliderValue">
-                                <span>100</span>
-                            </div>
-                            <div class="field">
-                                <div class="value reset">
-                                    <div class="reset_icon">
-                                        <i class="bi bi-arrow-counterclockwise"></i>
-                                    </div>
-                                </div>
-                                <div class="value field_left">80</div>
-                                <input type="range" min="80" max="240" value="160" steps="1">
-                                <div class="value field_right">240</div>
-                            </div>
-                        </div>
-                        <div class="color">
-                            <input type="color" class="form-control form-control-color color-half" id="left"
-                                value="#c81c1c">
-                            <input type="color" class="form-control form-control-color color-half" id="right"
-                                value="#1fd5d5">
-                        </div>
-                    </li>
-                    <li id="eixo_y">
-                        <div class="settings_inputs_section">
-                            <div class="settings_inputs_line"></div>
-                            <div class="settings_inputs_title">
-                                <a href="#eixo_y" class="text-body-secondary">
-                                    <h3>Eixo Y</h3>
-                                </a>
-                            </div>
-                            <div class="settings_inputs_line"></div>
-                        </div>
-                        <div class="range">
-                            <div class="sliderValue">
-                                <span>100</span>
-                            </div>
-                            <div class="field">
-                                <div class="value reset">
-                                    <div class="reset_icon">
-                                        <i class="bi bi-arrow-counterclockwise"></i>
-                                    </div>
-                                </div>
-                                <div class="value field_left">80</div>
-                                <input type="range" min="80" max="240" value="160" steps="1">
-                                <div class="value field_right">240</div>
-                            </div>
-                        </div>
-                        <div class="color">
-                            <input type="color" class="form-control form-control-color color-half" id="front"
-                                value="#683fe3">
-                            <input type="color" class="form-control form-control-color color-half" id="back"
-                                value="#efff16">
-                        </div>
-                    </li>
-                    <li id="eixo_z">
-                        <div class="settings_inputs_section">
-                            <div class="settings_inputs_line"></div>
-                            <div class="settings_inputs_title">
-                                <a href="#eixo_z" class="text-body-secondary">
-                                    <h3>Eixo Z</h3>
-                                </a>
-                            </div>
-                            <div class="settings_inputs_line"></div>
-                        </div>
-                        <div class="range">
-                            <div class="sliderValue">
-                                <span>100</span>
-                            </div>
-                            <div class="field">
-                                <div class="value reset">
-                                    <div class="reset_icon">
-                                        <i class="bi bi-arrow-counterclockwise"></i>
-                                    </div>
-                                </div>
-                                <div class="value field_left">80</div>
-                                <input type="range" min="80" max="240" value="160" steps="1">
-                                <div class="value field_right">240</div>
-                            </div>
-                        </div>
-                        <div class="color">
-                            <input type="color" class="form-control form-control-color" id="bottom" value="#ffffff">
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
     </main>
@@ -165,9 +282,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/js/navbar/toggle_nav.js"></script>
+    <script src="assets/js/tutorial/toggle_tutoria.js"></script>
     <script src="assets/js/settings_inputs/input_value/input_value.js"></script>
     <script src="assets/js/settings_inputs/reset_values/reset_values.js"></script>
-    <script src="assets/js/triangle/system/triangle.js"></script>
+    <script src="assets/js/tooltips/enable.js"></script>
+    <!-- <script src="assets/js/triangle/system/triangle.js"></script> -->
 
 </body>
 

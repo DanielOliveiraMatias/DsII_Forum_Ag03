@@ -1,0 +1,94 @@
+@import 'mixin.scss';
+
+.navbar {
+    top: 0;
+    width: 40%;
+    padding: 0;
+    right: -100%;
+    height: 100%;
+    z-index: 10000;
+    overflow: hidden;
+    position: absolute;
+    backdrop-filter: blur(1em);
+    background-color: rgba(0, 0, 0, 0.222);
+
+    &:hover {
+        .close {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            .close_icon {
+                color: rgba(255, 255, 255, 0.3);
+                transform: rotate(-180deg);
+            }
+
+            &:hover {
+                border: 1px solid rgb(255, 255, 255);
+                transform: scale(1.1);
+
+                .close_icon {
+                    color: rgb(255, 255, 255);
+                    transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+}
+
+.show_nav {
+    top: 0;
+    right: 0;
+}
+
+.close {
+    top: 1em !important;
+    right: 1em !important;
+    opacity: 1;
+    z-index: 10;
+    width: 2.7em;
+    height: 2.7em;
+    position: absolute;
+    border-radius: 50%;
+    @include flex('flex_1');
+    cursor: pointer !important;
+    border: 1px solid transparent;
+
+    .close_icon {
+        width: 100%;
+        height: 100%;
+        font-size: 1em;
+        @include space('0');
+        @include flex('flex_1');
+        color: rgba(255, 255, 255, 0.266);
+    }
+}
+
+.open {
+    top: .7em;
+    right: 2em;
+    z-index: 7;
+    width: 4em;
+    height: 3em;
+    position: absolute;
+    border-radius: .5em;
+    @include flex('flex_1');
+    cursor: pointer !important;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0.439);
+
+    &:hover {
+        border: 1px solid rgb(255, 255, 255);
+
+        .open_icon {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .open_icon {
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        @include space('0');
+        @include flex('flex_1');
+        color: rgba(255, 255, 255, 0.266);
+    }
+}

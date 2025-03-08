@@ -23,10 +23,10 @@ sliders.forEach(slider => {
         const leftPosition = percentage * (rangeWidth - thumbWidth);
 
         slideValue.style.left = `${leftPosition + thumbWidth / 1}px`;
-        slideValue.classList.add("show");
+        slideValue.classList.add("show_value");
     };
 
     inputSlider.onblur = () => {
-        slideValue.classList.remove("show");
+        slideValue.classList.remove("show_value");
     };
 });

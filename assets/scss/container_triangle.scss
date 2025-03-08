@@ -1,15 +1,146 @@
 @import 'mixin.scss';
 
 .container-triangle {
-    width: 60% !important;
+    position: relative;
+    width: 100% !important;
     height: 100% !important;
     @include flex('flex_1');
-    border: 1px solid rgb(255, 255, 255);
+}
+
+.triangle_options {
+    top: 1em;
+    right: 7em;
+    width: 10em;
+    height: 2em;
+    z-index: 10;
+    padding: .25em;
+    position: absolute;
+    border-radius: .25em;
+    color: rgb(0, 0, 0);
+    @include flex('flex_8');
+    background-color: rgb(54, 57, 60);
+
+    p {
+        @include space('0');
+    }
+
+    .triangle_option {
+        width: 47%;
+        z-index: 100;
+        height: 100%;
+        cursor: pointer;
+        border-radius: .2em;
+        @include flex('flex_1');
+        margin: 0 0.5em !important;
+        border: 1px solid rgb(23, 23, 23);
+
+        i {
+            z-index: 10;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.07);
+        }
+    }
+
+    .triangle_track {
+        top: .25em;
+        height: 77%;
+        width: 31.1%;
+        left: 3.45em;
+        position: absolute;
+        border-radius: .2em;
+        background-color: rgb(33, 37, 41);
+    }
+
+    .select_op {
+        color: rgb(255, 255, 255);
+        border: 1px solid transparent !important;
+    }
+}
+
+.triangle_tutorial {
+    width: 0;
+    top: 4em;
+    right: 7em;
+    opacity: 0;
+    padding: 1em;
+    z-index: 100;
+    overflow: hidden;
+    text-wrap: nowrap;
+    position: absolute;
+    border-radius: 1em;
+    height: auto !important;
+    @include flex('flex_10');
+    background-color: rgb(54, 57, 60);
+}
+
+.tuto_selected {
+    transform: scale(1.2) !important;
+    color: rgb(226, 200, 0) !important;
+    border: 1px solid transparent !important;
+    background-color: rgb(41, 39, 32) !important;
+}
+
+.tutorial_list {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.773) !important;
+
+    li {
+        pointer-events: none;
+
+        .tuto_icon {
+            font-size: 1em;
+            margin-right: .5em;
+
+            svg {
+                width: 1.5em;
+                height: 100%;
+            }
+        }
+
+        @include flex('flex_9');
+
+        p {
+            @include space('0');
+        }
+
+        hr {
+            width: 100%;
+            height: 0.5em;
+            margin: .5em 1em;
+            @include space('p0');
+        }
+    }
+}
+
+.list_title {
+    padding: .5em;
+    margin: .25em 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.67);
+
+    .content_icon {
+        margin-right: .25em;
+    }
+
+    .content_title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.show_tuto {
+    top: 4em !important;
+    right: 7em !important;
+    opacity: 1 !important;
+    width: 15em !important;
 }
 
 .content-triangle {
-    width: 160px;
-    height: 160px;
+    width: 80px;
+    height: 80px;
     perspective: 800px;
     perspective-origin: 50% -100%;
 }

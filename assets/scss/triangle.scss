@@ -14,28 +14,28 @@
 }
 
 .front {
-    border-bottom: 160px solid #c81c1c;
+    border-bottom: 160px solid rgba(200, 28, 28, 0.5);
     transform: rotateX(30deg) translateZ(46px);
 }
 
 .back {
-    border-bottom: 160px solid #1fd5d5;
+    border-bottom: 160px solid rgba(31, 213, 213, 0.5);
     transform: rotateX(-30deg) translateZ(-46px);
 }
 
 .left {
-    border-bottom: 160px solid #683fe3;
+    border-bottom: 160px solid rgba(104, 63, 227, 0.5);
     transform: rotateY(90deg) rotateX(-30deg) translateZ(-46px);
 }
 
 .right {
-    border-bottom: 160px solid #efff16;
+    border-bottom: 160px solid rgba(239, 255, 22, 0.5);
     transform: rotateY(-90deg) rotateX(-30deg) translateZ(-46px);
 }
 
 .bottom {
     position: absolute;
-    background: #ffffff;
+    background: rgb(255, 255, 255, 0.5);
     width: 160px;
     height: 160px;
     transform: rotateX(90deg) translateZ(-46px);
