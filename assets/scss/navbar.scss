@@ -11,6 +11,7 @@
     position: absolute;
     backdrop-filter: blur(1em);
     background-color: rgba(0, 0, 0, 0.222);
+    border-radius: 1.7em 0 0 1.7em;
 
     &:hover {
         .close {
@@ -40,14 +41,14 @@
 }
 
 .close {
-    top: 1em !important;
-    right: 1em !important;
     opacity: 1;
     z-index: 10;
     width: 2.7em;
     height: 2.7em;
     position: absolute;
     border-radius: 50%;
+    top: 1em !important;
+    right: 1em !important;
     @include flex('flex_1');
     cursor: pointer !important;
     border: 1px solid transparent;

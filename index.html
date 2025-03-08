@@ -26,18 +26,28 @@
             <div class="container-triangle">
                 <div class="triangle_options">
                     <div class="triangle_track"></div>
-                    <p class="triangle_option toggle_tuto" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Tutorial">
+                    <div class="triangle_option toggle_tuto">
                         <i class="bi bi-lightbulb toggle_tuto"></i>
-                    </p>
-                    <p class="triangle_option select_op" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Perspectiva">
+                        <span class="triangle_op_title">Tutorial</span>
+                    </div>
+                    <div class="triangle_option select_op">
                         <i class="bi bi-box"></i>
-                    </p>
-                    <p class="triangle_option" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Ortográfica">
+                        <span class="triangle_op_title">Perspectiva</span>
+                    </div>
+                    <div class="triangle_option">
                         <i class="bi bi-square"></i>
-                    </p>
+                        <span class="triangle_op_title">Ortográfica</span>
+                    </div>
+                </div>
+                <div class="triangle_style">
+                    <div class="triangle_op_style style_borders">
+                        <i class="bi bi-border-outer"></i>
+                        <div class="triangle_op_title">Borda no elemento</div>
+                    </div>
+                    <div class="triangle_op_style style_mesh triangle_op_selected">
+                        <i class="bi bi-grid-3x3"></i>
+                        <div class="triangle_op_title">Mesh e Debug</div>
+                    </div>
                 </div>
                 <div class="triangle_tutorial">
                     <ul class="list-unstyled tutorial_list">
@@ -49,7 +59,7 @@
                                 <p>PC</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     style="width: 1.5em; height: 100%;" fill="rgba(255, 255, 255, 0.773)" version="1.1"
@@ -64,7 +74,7 @@
                                 <p>Mover</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     style="width: 1.5em; height: 100%;" fill="rgba(255, 255, 255, 0.773)" version="1.1"
@@ -79,7 +89,7 @@
                                 <p>Rotacionar</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     version="1.1" viewBox="600.00103,107.00019,800.00137,800.00137">
@@ -102,7 +112,7 @@
                                 <p>Celular</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <i class="bi bi-arrows-move"></i>
                             </div>
@@ -110,7 +120,7 @@
                                 <p>Mover</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <i class="bi bi-arrow-repeat"></i>
                             </div>
@@ -118,7 +128,7 @@
                                 <p>Rotacionar</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="list_tuto_items">
                             <div class="tuto_icon">
                                 <i class="bi bi-arrows-angle-expand"></i>
                             </div>
@@ -131,16 +141,6 @@
                 <div class="toggle_nav open">
                     <div class="open_icon">
                         <i class="bi bi-layout-sidebar-reverse"></i>
-                    </div>
-                </div>
-                <div class="content-triangle">
-                    <div class="triangle">
-                        <div class="sides right"></div>
-                        <div class="sides left"></div>
-                        <div class="sides back"></div>
-                        <div class="sides front"></div>
-                        <div class="bottom"></div>
-                        <div class="shadow"></div>
                     </div>
                 </div>
             </div>
@@ -200,9 +200,9 @@
                                             <i class="bi bi-arrow-counterclockwise"></i>
                                         </div>
                                     </div>
-                                    <div class="value field_left">80</div>
-                                    <input type="range" min="80" max="240" value="160" steps="1">
-                                    <div class="value field_right">240</div>
+                                    <div class="value field_left">0.01</div>
+                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01">
+                                    <div class="value field_right">3.75</div>
                                 </div>
                             </div>
                             <div class="color">
@@ -232,9 +232,9 @@
                                             <i class="bi bi-arrow-counterclockwise"></i>
                                         </div>
                                     </div>
-                                    <div class="value field_left">80</div>
-                                    <input type="range" min="80" max="240" value="160" steps="1">
-                                    <div class="value field_right">240</div>
+                                    <div class="value field_left">0.01</div>
+                                    <input type="range" min="0.01" max="3.75" value="1.75" steps="0.01">
+                                    <div class="value field_right">3.75</div>
                                 </div>
                             </div>
                             <div class="color">
@@ -264,9 +264,9 @@
                                             <i class="bi bi-arrow-counterclockwise"></i>
                                         </div>
                                     </div>
-                                    <div class="value field_left">80</div>
-                                    <input type="range" min="80" max="240" value="160" steps="1">
-                                    <div class="value field_right">240</div>
+                                    <div class="value field_left">0.01</div>
+                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01">
+                                    <div class="value field_right">3.75</div>
                                 </div>
                             </div>
                             <div class="color">
@@ -287,7 +287,8 @@
     <script src="assets/js/settings_inputs/input_value/input_value.js"></script>
     <script src="assets/js/settings_inputs/reset_values/reset_values.js"></script>
     <script src="assets/js/tooltips/enable.js"></script>
-    <!-- <script src="assets/js/triangle/system/triangle.js"></script> -->
+    <script src="assets/js/p5/p5.min.js"></script>
+    <script src="assets/js/sketch.js"></script>
 
 </body>
 

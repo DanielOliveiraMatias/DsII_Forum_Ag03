@@ -90,6 +90,17 @@
         height: 85% !important;
     }
 
+    .triangle_style {
+        width: 6em !important;
+        height: 14em !important;
+
+        .triangle_op_style {
+            // width: 6em !important;
+            // height: 5em !important;
+            font-size: 2em !important;
+        }
+    }
+
     .container-triangle {
         min-width: 100% !important;
         max-width: 100% !important;
@@ -105,6 +116,7 @@
         opacity: 0 !important;
         right: -100% !important;
         z-index: 100 !important;
+        border-radius:0 !important;
         position: absolute !important;
     }
 
@@ -383,6 +395,31 @@
 
     .open_icon {
         font-size: 3em !important;
+    }
+
+    .triangle_style {
+        width: 4em !important;
+        height: 12em !important;
+
+        .triangle_op_style {
+            font-size: 1.5em !important;
+        }
+    }
+
+    .triangle_options {
+        height: 2em !important;
+
+        .triangle_op_title {
+            top: 157%;
+            opacity: 0;
+            position: absolute;
+            padding: .25em 1em;
+        }
+
+        .select_op {
+            color: rgb(255, 255, 255);
+            border: 1px solid transparent !important;
+        }
     }
 
     .settings_stats {

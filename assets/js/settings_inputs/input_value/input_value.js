@@ -4,29 +4,45 @@ sliders.forEach(slider => {
     const slideValue = slider.querySelector('span');
     const inputSlider = slider.querySelector('input');
 
-    const allowedValues = [80, 100, 130, 160, 200, 220, 240];
+    inputSlider.step = 0.01;
+
+    let timeout;
+
+    function hideSlideValue() {
+        slideValue.classList.remove("show_value");
+    }
+
+    function resetTimeout() {
+        clearTimeout(timeout);
+        timeout = setTimeout(hideSlideValue, 3000);
+    }
 
     inputSlider.oninput = () => {
         let value = inputSlider.value;
 
-        let closestValue = allowedValues.reduce((prev, curr) => {
-            return (Math.abs(curr - value) < Math.abs(prev - value) ? curr : prev);
-        });
-
-        inputSlider.value = closestValue;
-
-        slideValue.textContent = closestValue;
+        slideValue.textContent = value;
 
         const thumbWidth = 20;
         const rangeWidth = inputSlider.offsetWidth;
-        const percentage = (closestValue - inputSlider.min) / (inputSlider.max - inputSlider.min);
+        const percentage = (value - inputSlider.min) / (inputSlider.max - inputSlider.min);
         const leftPosition = percentage * (rangeWidth - thumbWidth);
 
         slideValue.style.left = `${leftPosition + thumbWidth / 1}px`;
+
         slideValue.classList.add("show_value");
+
+        resetTimeout();
     };
 
     inputSlider.onblur = () => {
         slideValue.classList.remove("show_value");
     };
+
+    document.addEventListener('click', () => {
+        resetTimeout();
+    });
+
+    slider.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
 });

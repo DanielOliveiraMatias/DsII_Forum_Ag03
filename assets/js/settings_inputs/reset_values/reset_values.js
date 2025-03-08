@@ -1,13 +1,25 @@
 document.querySelectorAll('.reset').forEach(resetButton => {
     resetButton.addEventListener('click', () => {
-        const rangeInput = resetButton.closest('li').querySelector('input[type="range"]');
-        if (rangeInput) {
-            rangeInput.value = 160;
+        const listItem = resetButton.closest('li');
+        const rangeInput = listItem.querySelector('input[type="range"]');
+        const sliderValue = listItem.querySelector('.sliderValue span');
 
-            const sliderValue = resetButton.closest('li').querySelector('.sliderValue span');
-            if (sliderValue) {
-                sliderValue.textContent = rangeInput.value;
+        if (rangeInput && sliderValue) {
+            switch (listItem.id) {
+                case 'eixo_x':
+                    rangeInput.value = 1.00;
+                    break;
+                case 'eixo_y':
+                    rangeInput.value = 1.75;
+                    break;
+                case 'eixo_z':
+                    rangeInput.value = 1.00;
+                    break;
+                default:
+                    rangeInput.value = 160;
             }
+
+            sliderValue.textContent = rangeInput.value;
         }
 
         const resetEvent = new CustomEvent('rangeReset', { bubbles: true });
