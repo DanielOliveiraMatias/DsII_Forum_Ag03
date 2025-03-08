@@ -6,6 +6,17 @@ sliders.forEach(slider => {
 
     inputSlider.step = 0.01;
 
+    let timeout;
+
+    function hideSlideValue() {
+        slideValue.classList.remove("show");
+    }
+
+    function resetTimeout() {
+        clearTimeout(timeout);
+        timeout = setTimeout(hideSlideValue, 3000);
+    }
+
     inputSlider.oninput = () => {
         let value = inputSlider.value;
 
@@ -18,9 +29,19 @@ sliders.forEach(slider => {
 
         slideValue.style.left = `${leftPosition + thumbWidth / 1}px`;
         slideValue.classList.add("show");
+
+        resetTimeout();
     };
 
     inputSlider.onblur = () => {
         slideValue.classList.remove("show");
     };
+
+    document.addEventListener('click', () => {
+        resetTimeout();
+    });
+
+    slider.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
 });
