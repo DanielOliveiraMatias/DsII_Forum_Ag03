@@ -30,11 +30,11 @@
                         <i class="bi bi-lightbulb toggle_tuto"></i>
                         <span class="triangle_op_title">Tutorial</span>
                     </div>
-                    <div class="triangle_option select_op">
+                    <div id="perspectiva" class="triangle_option select_op">
                         <i class="bi bi-box"></i>
                         <span class="triangle_op_title">Perspectiva</span>
                     </div>
-                    <div class="triangle_option">
+                    <div id="ortografica" class="triangle_option">
                         <i class="bi bi-square"></i>
                         <span class="triangle_op_title">Ortográfica</span>
                     </div>
@@ -172,8 +172,9 @@
                             <p class="loader_write"></p>
                         </div>
                         <div class="settings_content_text_stats">
-                            <p class="elements_stats"><span class="c_correct">Eixo X</span>, <span class="c_wrong">Eixo
-                                    Y</span>, <span class="c_important">Eixo Z</span>, <span class="c_empty">Base</span>
+                            <p class="elements_stats"><span class="c_correct" id="eixoX">Eixo X</span>, <span
+                                    class="c_wrong" id="eixoY">Eixo Y</span>, <span class="c_important" id="eixoZ">Eixo
+                                    Z</span>
                             </p>
                         </div>
                     </div>
@@ -201,7 +202,7 @@
                                         </div>
                                     </div>
                                     <div class="value field_left">0.01</div>
-                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01">
+                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01" name="eixoX">
                                     <div class="value field_right">3.75</div>
                                 </div>
                             </div>
@@ -233,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div class="value field_left">0.01</div>
-                                    <input type="range" min="0.01" max="3.75" value="1.75" steps="0.01">
+                                    <input type="range" min="0.01" max="3.75" value="1.75" steps="0.01" name="eixoY">
                                     <div class="value field_right">3.75</div>
                                 </div>
                             </div>
@@ -265,7 +266,7 @@
                                         </div>
                                     </div>
                                     <div class="value field_left">0.01</div>
-                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01">
+                                    <input type="range" min="0.01" max="3.75" value="1.00" steps="0.01" name="eixoZ">
                                     <div class="value field_right">3.75</div>
                                 </div>
                             </div>
